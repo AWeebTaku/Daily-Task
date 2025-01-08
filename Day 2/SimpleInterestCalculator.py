@@ -6,7 +6,7 @@ RoI = float(input("Enter Rate of Interest(one year): "))
 TRoI = RoI*Time
 
 TSI = (Principal*TRoI)/100
-print("Total Interest: ",TSI)
+print("Total Interest:",TSI)
 
 EB = Principal+TSI
-print("End Balance: ",EB)
+print("End Balance:",EB)
