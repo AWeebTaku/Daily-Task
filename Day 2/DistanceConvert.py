@@ -2,4 +2,4 @@
 
 Kilometer = int(input("Enter Distance is Kilometers: "))
 Miles = Kilometer/1.6
-print("Distance in Miles: ",Miles)
+print("Distance in Miles:",Miles)
