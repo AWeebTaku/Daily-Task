@@ -16,6 +16,7 @@ amount and prints out the net amount that the customer is required to pay
 after the discount.
 
 5. A transport company charges the fare according to following table:
+
 Distance					Charges
 1-50						8 Rs/Km
 51-100						10 Rs/Km
