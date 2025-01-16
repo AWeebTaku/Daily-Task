@@ -1,8 +1,8 @@
-1. Python program to check leap year
+1. Python program to check leap year.
 
-2. Python Program to Find the Largest Among Three Numbers
+2. Python Program to Find the Largest Among Three Numbers.
 
-3. Python Program to Check if a Number is Positive, Negative or 0
+3. Python Program to Check if a Number is Positive, Negative or 0.
 
 4. A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys.
    The vendor gives a discount of 10% on orders for battery-based toys if the order is for more than Rs. 1000.
@@ -15,5 +15,5 @@
 
 		Distance					Charges
 		1-50						8 Rs/Km
-		51-100						10 Rs/Km
+		51-100					10 Rs/Km
 		>100						12 Rs/Km
