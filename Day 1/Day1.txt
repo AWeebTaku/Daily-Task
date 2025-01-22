@@ -1,0 +1,39 @@
+#1. Calculate the multiplication and sum of two numbers
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+
+sum = num1 + num2
+pro = num1 * num2
+
+print("Sum of Two Numbers =", sum)
+print("Multiplication product of Two Numbers =", pro)
+
+
+
+#2. Declare two variables and print that which variable is largest using ternary operators
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+
+if num1 < num2:
+    print(num2 ,"is Greater than",num1)
+else:
+    print(num1 ,"is Greater than",num2)
+
+
+
+#3. Python program to convert the temperature in degree centigrade to Fahrenheit
+
+tempC = int(input("Enter Temperature(°C): "))
+tempF = (tempC * 9/5) + 32
+print("Temperature(°F):",tempF)
+
+
+
+#4. Python program to find the area of a triangle whose sides are given
+
+Breath = int(input("Enter Breath of Triangle: "))
+Height = int(input("Enter Height of Triangle: "))
+Area = 1/2*(Breath*Height)
+print("Area of Triangle =",Area)
