@@ -1,0 +1,50 @@
+#1. Using input() function take one number from the user and using ternary operators check whether the number is even or odd
+
+num1 = int(input("Enter a number: "))
+if num1 == 0:
+	print("Number is neither even nor odd")
+elif num1%2 == 0:
+	print("Number is Even")
+else:
+	print("Number is Odd")
+
+
+
+#2. Using input function take two number and then swap the number
+
+num1 = int(input("Enter number One: "))
+num2 = int(input("Enter number Two: "))
+temp1 = 0
+
+print("Number One is:",num1)
+print("Number Two is:",num2)
+
+temp1 = num1
+num1 = num2
+print("Number One is:",num1)
+
+num2 = temp1
+print("Number Two is:",temp1)
+
+
+
+#3. Write a Program to Convert Kilometers to Miles
+
+Kilometer = int(input("Enter Distance is Kilometers: "))
+Miles = Kilometer/1.6
+print("Distance in Miles:",Miles)
+
+
+
+#4. Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+Principal = int(input("Enter Principal Amount: "))
+Time = int(input("Enter Term in years: "))
+RoI = float(input("Enter Rate of Interest(one year): "))
+TRoI = RoI*Time
+
+TSI = (Principal*TRoI)/100
+print("Total Interest:",TSI)
+
+EB = Principal+TSI
+print("End Balance:",EB)
