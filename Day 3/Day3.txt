@@ -1,0 +1,105 @@
+#1. Python program to check leap year
+
+year = int(input("Enter a Year: "))
+
+if year%4 == 0:
+	print("It is a Leap Year")
+else:
+	print("Not a Leap Year")
+
+
+
+#2. Python Program to Find the Largest Among Three Numbers
+
+num1 = int(input("Enter number one: "))
+num2 = int(input("Enter number two: "))
+num3 = int(input("Enter number three: "))
+
+if num1<num2 and num2>num3:
+	print("Number Two is the Largest:",num2)
+elif num2<num1 and num1>num3:
+	print("Number One is the Largest:",num1)
+elif num3>num1 and num3>num2:
+	print("Number Three is the Largest:",num3)
+else:
+	print("All numbers are equal")
+
+
+
+#3. Python Program to Check if a Number is Positive, Negative or 0
+
+number = int(input("Enter a Number: "))
+
+if number == 0:
+	print("Number is Zero")
+elif number>0:
+	print("Number is Positive")
+elif number<0:
+	print("Number is Negative")
+else:
+	print("Invalid Number")
+
+
+
+# 4. A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys.
+# The vendor gives a discount of 10% on orders for battery-based toys if the order is for more than Rs. 1000.
+# On orders of more than Rs. 100 for key-based toys, a discount of 5% is given,
+# and a discount of 10% is given on orders for electrical charging based toys of value more than Rs. 500.
+# Assume that the numeric codes 1,2 and 3 are used for battery based toys, key-based toys, and electrical charging based toys respectively.
+# Write a program that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount.
+
+ProductCode = int(input("Enter a Product Code: "))
+
+if ProductCode == 1:
+	BatteryPrice = int(input("Enter Amount: "))
+	if BatteryPrice>=1000:
+		Discount = BatteryPrice*10/100
+		NetPrice = BatteryPrice - Discount
+		print("Your Net Amount is:",NetPrice)
+	else:
+		print("Your Net Amount is:",BatteryPrice)
+
+
+if ProductCode == 2:
+	KeyPrice = int(input("Enter Amount: "))
+	if KeyPrice>=100:
+		Discount = KeyPrice*5/100
+		NetPrice = KeyPrice - Discount
+		print("Your Net Amount is:",NetPrice)
+	else:
+		print("Your Net Amount is:",KeyPrice)
+
+
+if ProductCode == 3:
+	ElectricalPrice = int(input("Enter Amount: "))
+	if ElectricalPrice>=500:
+		Discount = KeyPrice*10/100
+		NetPrice = ElectricalPrice - Discount
+		print("Your Net Amount is:",NetPrice)
+	else:
+		print("Your Net Amount is:",ElectricalPrice)
+
+
+
+# 5. A transport company charges the fare according to following table:
+# 		Distance					Charges
+# 		1-50						8 Rs/Km
+# 		51-100						10 Rs/Km
+# 		>100						12 Rs/Km
+
+Distance = int(input("Enter Distance in Kilometers: "))
+
+if Distance >= 1 and Distance <= 50:
+	Charges = 8
+	Fare = Charges*Distance
+	print("Total Fare:",Fare)
+elif Distance >= 51 and Distance <= 100:
+	Charges = 10
+	Fare = Charges*Distance
+	print("Total Fare:",Fare)
+elif Distance>100:
+	Charges = 12
+	Fare = Charges*Distance
+	print("Total Fare:",Fare)
+else:
+	print("Invalid Journey Distance")
