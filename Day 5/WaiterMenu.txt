@@ -1,3 +1,6 @@
+#1. Create an application i.e online food ordering system.
+
+
 #Dictionary for Menu
 starter1 = {
     'Name' : 'Starter 1',
