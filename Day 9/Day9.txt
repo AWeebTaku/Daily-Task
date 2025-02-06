@@ -1,0 +1,84 @@
+#1. Write a Python program to sum all the items in a list.
+
+list = [1,2,3,4,5]
+listsum = sum(list)
+print("Sum of the elements in the list is",listsum)
+
+
+
+#2. Write a Python program to get the largest and smallest number from a list without builtin functions.
+
+a = [345,234,5,2345,4,534,234]
+smallest = a[0]
+largest = a[0]
+
+for val in a:
+	if val < smallest:
+		smallest = val
+	if val > largest:
+		largest = val
+
+print("The Smallest Element is",smallest)
+print("The Largest Element is",largest)
+
+
+
+#3. Write a Python program to find duplicate values from a list and display those.
+
+a = [1, 2, 3, 1, 2, 4, 5, 6, 5]
+s = set()
+dup = []
+
+for n in a:
+    if n in s:
+        dup.append(n)
+    else:
+        s.add(n)
+
+print("The Duplicate Elements are",dup)
+
+
+
+# 4. Write a Python program to split a given list into two parts where the length of the first part of the list is given.
+# Original list: [1, 1, 2, 3, 4, 4, 5, 1]
+# Length of the first part of the list: 3
+# Splitted the said list into two parts: ([1, 1, 2], [3, 4, 4, 5, 1])
+
+def split_two_parts(n_list, L):
+	return n_list[:L], n_list[L:]
+
+n_list = [1, 1, 2, 3, 4, 4, 5, 1]
+
+print("Original list:")
+print(n_list)
+
+first_list_length = 3
+
+print("\nLength of the first part of the list:", first_list_length)
+print("\nSplit the said list into two parts:")
+print(split_two_parts(n_list, first_list_length))
+
+
+
+# 5. Write a Python program to traverse a given list in reverse order, and print the elements with the original index.
+# Original list: ['red', 'green', 'white', 'black']
+# Traverse the said list in reverse order:
+# black
+# white
+# green
+# red
+
+color = ["red", "green", "white", "black"]
+
+print("Original list:")
+print(color)
+
+print("\nTraverse the said list in reverse order:")
+
+for i in reversed(color):
+	print(i)
+
+print("\nTraverse the said list in reverse order with original index:")
+
+for i, el in reversed(list(enumerate(color))):
+	print(i, el)
